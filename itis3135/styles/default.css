@@ -1,0 +1,252 @@
+body {
+    background-color: #97b282;
+    text-align: center;
+    color: rgb(8, 8, 8);
+    font-family: Georgia;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/*https://coolors.co/fff0f5-ffc5d0-f7d6d0-fb6090-821d30*/
+a {
+    color: deepblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    text-align: left;
+    margin: 0 auto; /* Centers the content horizontally */
+    max-width: 1200px; /* Adjust as needed */
+    width: 90%; /* Adjust percentage based on design requirements */
+}
+
+h2,
+h3,
+h1,
+figcaption {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+figure {
+    text-align: center;
+    font-style: italic;
+}
+
+p {
+    text-align: center;
+    font-size: 18px; /* Added font size for better readability */
+}
+
+nav {
+    font-size: 18px;
+}
+
+.design {
+    font-size: 16.5px;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+.intro {
+    list-style-type: circle;
+}
+
+.crap {
+    list-style-type: none;
+    font-size: 0.165in;
+    margin: 0 auto; /* Centers the content horizontally */
+}
+
+.letter {
+    font-size: 0.25in;
+}
+
+.web {
+    color: rgb(8, 8, 8);
+    text-decoration: underline;
+}
+
+.good_bad {
+    text-align: left;
+}
+
+/* Table */
+table tr:nth-child(even) {
+    background-color: pink;
+    color: black;
+}
+
+table tr:nth-child(odd) {
+    background-color: ghostwhite;
+    color: black;
+}
+
+table,
+th,
+td,
+tr {
+    border: 1.5px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 1px 4px 1px 4px;
+}
+
+.table {
+    margin: 0 auto; /* Centers the content horizontally */
+}
+
+ol {
+    font-size: 20px;
+}
+
+/* Form */
+form {
+    padding: 10px;
+}
+
+.label,
+.input {
+    margin: 0 auto; /* Centers the content horizontally */
+}
+
+.divider {
+    border: 5px double black;
+}
+
+.reset,
+.submit {
+    border: 2.5px solid hotpink;
+}
+
+/* Laptop/small screens */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    main {
+        width: 90%;
+    }
+    img {
+        width: 50%;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    main {
+        width: 90%;
+        font-size: 18px;
+    }
+    img {
+        width: 60%;
+    }
+}
+
+/* Mobile */
+@media screen and (min-width: 370px) and (max-width: 600px) {
+    main {
+        width: 85%;
+        font-size: 16px;
+    }
+    img {
+        width: 50%;
+    }
+}
+
+.calculator {
+    width: 400px; /* Increased width */
+    padding: 20px;
+    border: 2px solid #ffc0cb; /* Pink border */
+    border-radius: 10px;
+    text-align: center; /* Centering the content */
+    background-color: #fff0f5; /* Light pink background */
+}
+
+.calculator #display {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 24px; /* Increased font size */
+    background-color: #fff; /* White display background */
+    border: 2px solid #ffc0cb; /* Pink border for display */
+    border-radius: 5px;
+}
+
+.calculator .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.calculator button {
+    padding: 20px; /* Increased padding */
+    font-size: 24px; /* Increased font size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #fb6090; /* Pink button background */
+    color: #fff; /* White text color */
+}
+
+.calculator button:hover {
+    background-color: #ff8cbb; /* Lighter pink on hover */
+}
+
+
+#results_table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#results_table th, 
+#results_table td {
+    border: 1px solid #fff0f5;
+    padding: 8px;
+    text-align: left;
+}
+
+#results_table th {
+    background-color: #fb6090;
+}
+
+#results h2 {
+    color: #fff0f5;
+}
+
+.input-container {
+    margin-bottom: 10px;
+}
+
+.input-container input[type="text"] {
+    width: 150px;
+    padding: 5px;
+}
+
+.input-container button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #7d988f;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+#results-table {
+    margin: 0 auto;
+}
+
+button {
+    background-color: #97b282;
+    color: black;
+    border: 2.5px double #003249;
+  }

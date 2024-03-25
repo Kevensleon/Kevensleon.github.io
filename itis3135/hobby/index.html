@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fortnite</title>
+        <style>
+            /* colors: (heading) 0E7C7B, (text) 17BEBB, (background) EFFBF2, D62246, 4B1D3F  */
+            body{
+                background-color: #EFFBF2; /* whitish background */
+                color: #17BEBB;
+                margin: 0;
+                padding: 0;
+            }
+
+            header{
+                text-align: center;
+                padding: 20px;
+                background-color: #EFFBF2; /* same background color to match website */
+            }
+
+            h1{
+                margin-bottom: 20px; 
+            }
+
+            /* navigator */
+            nav {
+                background-color: #4B1D3F; /* Dark purple background */
+                color: #fafafa;
+                padding: 10px 0;
+                text-align: center;
+            }
+
+            nav a {
+                color: #fafafa; /* Light white color for navigation text */
+                text-decoration: none;
+                margin: 0 10px; /* Add spacing between links */
+                padding: 5px 10px; /* Add padding to make links clickable */
+                border-radius: 5px; /* Add rounded corners to links */
+            }
+
+            nav a:hover {
+                background-color: #220d1c; /* Slightly darker light blue background */
+            }
+
+            main{
+                padding: 20px;
+            }
+
+            /* footer */
+            footer {
+                background-color: #4B1D3F; /* Dark purple background for footer navigation */
+                padding: 10px 0; /* Add padding for spacing */
+                text-align: center; /* Center align navigation links */
+            }
+
+            footer nav a {
+                color: #ffffff; /* Light text color for navigation links */
+                text-decoration: none;
+                margin: 0 10px; /* Add spacing between links */
+                padding: 5px 10px; /* Add padding to make links clickable */
+                border-radius: 5px; /* Add rounded corners to links */
+                transition: background-color 0.5s; /* Smooth transition for hover effect */
+            }
+
+            footer a:hover {
+                color: #655a05; /* Slightly darker light blue background */
+            }
+
+            footer a {
+                color: #eeea10; /* yellow link color */
+                text-decoration: none;
+                transition: color 0.3s; /* Smooth transition for color change */
+            }
+            
+            /* CSS styles for image captions */
+            figure {
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+
+            figcaption {
+                font-size: 14px; /* Adjust font size as needed */
+                margin-top: 5px; /* Add spacing between image and caption */
+                color: #17BEBB; /* Adjust caption color */
+                font-weight: bold; /* Make the text bold */
+                text-align: center;
+            }
+
+            /* CSS styles for images */
+            .img-small {
+                width: 150px; /* Adjust the width as needed */
+                height: auto; /* Maintain aspect ratio */
+                float: left; /* Float the images to the left */
+                margin-right: 15px; /* Add some spacing between the image and the text */
+            }
+
+            /* CSS styles for image captions in about section */
+            .about-list {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .about-wrapper {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            .about-text {
+                flex-grow: 10;
+                margin-right: 50px;
+                margin-left: 300px;
+            }
+
+            .img-short {
+                width: 150px; /* Adjust the width as needed */
+                height: auto; /* Maintain aspect ratio */
+                margin-left: 200px; /* Add some spacing between the image and the text */
+            }
+
+            .fortnite-creator { /* centers about */
+                text-align: center;
+            }
+
+            .larger-heading {
+                font-size: 3rem; /* Adjust the font size as needed */
+            /* Additional styling can be applied here */
+            }
+
+            /* Additional CSS to make the validation buttons side by side */
+                .validation-buttons {
+                display: flex; /* Make the container a flex container */
+                flex-direction: row; /* Arrange items in a row */
+                justify-content: center; /* Center items horizontally */
+            }
+
+            /* Reset styles for image validation */
+            #validation_link_html img,
+            #validation_link_css img {
+                display: inline-block;
+                margin: 0; /* Remove any default margins */
+                width: auto; /* Reset width */
+                height: 31px; /* Set a fixed height to match the button height */
+            }
+
+
+            #where-page {
+                display: block;
+                margin: auto;
+                max-width: 100%;
+                height: 400px;
+            }
+
+            h2, h3{
+                text-align: center;
+            }
+            .container {
+                display: flex;
+                justify-content: center; /* Center content horizontally */
+                align-items: center; /* Center content vertically */
+            }
+            
+            .container img {
+                max-width: 500px; /* Adjust the maximum width as needed */
+                height: auto; /* Maintain aspect ratio */
+                margin-left: 15px; /* Add some spacing between the image and the text */
+            }
+            /* image caption */
+            .container figure figcaption {
+                color: #17BEBB; /* Set the text image color to blue */
+                font-weight: bold; /* Make the text bold */
+            }
+            
+            .part p {
+                text-align: center;
+            }
+
+        </style> <!--end style tag-->
+    </head><!---end head tag-->
+
+    <body>
+        <header>
+            <h1>Fortnite Battle Royal</h1>
+            <nav>
+                <a href="#home">Welcome to The Battle Bus</a>
+                --
+                <a href="#about">Who made fortnite</a>
+                --
+                <a href="#when">When to Stay on Top of the Game</a>
+                --
+                <a href="#where">Where to Explore</a>
+                --
+                <a href="#how">How to Become a Battle Royale Master</a>
+                --
+                <a href="#why">Why</a>
+                --
+                <a href="#AI">AI Prompts</a>
+            </nav><!--end nav tag-->
+        </header><!--end header tag-->
+
+        <main>
+            <!--home-->
+            <section id="home"> 
+                <h2>Welcome to The Battle Bus - Your Guide to Fortnite Battle Royale!</h2>
+                <br>
+                <div class="container">
+                    <figure>
+                        <img src="images/Home.png" alt="Fortnite Battle Royale"><!--fortnite image home-->
+                        <figcaption>Generated by DALL-E: An action-packed image showcasing the intensity of a Fortnite Battle Royale match, with players building, shooting, and battling it out.</figcaption>
+                    </figure>
+                    <div class="about-text">
+                        <h3>Drop into Fortnite</h3>
+                        <p>Fortnite is a free-to-play online video game developed by Epic Games. It offers a variety of exciting game modes, but the most popular is undoubtedly Fortnite Battle Royale.</p>
+                        <h3>Battle Royale Basics</h3>
+                        <p>Battle Royale is a thrilling last-man-standing game mode where up to 100 players parachute onto a shrinking map. Players scramble to find weapons, gear, and resources, all while battling it out to be the sole survivor.  The strategic use of building structures and clever maneuvering are key to achieving that coveted Victory Royale!</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--about-->
+            <section id="about">
+                <h2 class="fortnite-creator">Who made Fortnite?</h2> <!--changed mission-statement to fortnite-creator-->
+                <ul class="about-list"> <!--changed influential-list to about-list-->
+                    <li>
+                        <div class="about-wrapper"><!--changed influential-wrapper to about wrapper-->
+                            <figure>
+                                <img src="images/Tim.png" alt="Tim Sweeney" class="img-short"> <!--link to 1st fortnite image in images folder-->
+                                <figcaption>Generated by DALL-E: Tim Sweeney</figcaption><!--1st fortnite image caption-->
+                            </figure>
+                            <div class="about-text">
+                                <p>Fortnite, and by extension Fortnite Battle Royale, was brought to life by Epic Games. Founded in 1991 by Tim Sweeney in North Carolina, Epic Games has become a leading force in the video game industry. Their passion for innovation and creating immersive experiences is evident in the success of Fortnite and its ever-evolving world.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--2nd list item-->
+                    <li>
+                        <div class="about-wrapper">
+                            <figure>
+                                <img src="images/northCarolina.png" alt="North Carolina" class="img-short"> <!--link to 2nd fortnite image in images folder-->
+                                <figcaption>Canva Image: North Carolina</figcaption><!--2nd fortnite image caption-->
+                            </figure>
+                            <div class="about-text">
+                                <p>While Epic Games was founded in North Carolina in 1991, it wasn't founded in a specific city.  The company originated in the home of Tim Sweeney, located in Potomac, Maryland.  Following their first commercial video game release, they moved their headquarters to Cary, North Carolina in 1999.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </section>
+
+            <!--when-->
+            <section id="when">
+                <h2>When to Stay on Top of the Game</h2>
+                <br>
+                <div class="container">
+                    <figure>
+                        <img src="images/socialMedia.png" alt="Social Media"> <!--image for when-->
+                        <figcaption>Canva Image: Social media connectivity</figcaption>
+                    </figure>
+                    <div class="about-text">
+                        <h3>Mastering the Season Cycle</h3>
+                        <p>Fortnite operates on a seasonal structure, with each season introducing a new theme, storyline elements, map changes, weapons, and gameplay mechanics. Staying updated on the latest season is key. Keep an eye out for official Fortnite announcements to learn about the new season's theme, Battle Pass rewards, and any significant gameplay changes that might affect your strategies.</p>
+
+                        <h3>Following the Community Pulse</h3>
+                        <p>The Fortnite community is a vibrant source of information and inspiration. Here are some ways to stay connected</p>
+                        <ul>
+                            <li><strong>Official Fortnite Social Media:</strong> Following the official Fortnite Twitter, Instagram, and YouTube channels will keep you updated on official announcements, patch notes, and developer insights.</li>
+                            <li><strong>Content Creators & Streamers:</strong> Fortnite content creators and streamers are a fantastic resource for learning advanced strategies, discovering new techniques, and staying entertained. Find creators you enjoy and tune into their streams or videos to stay on top of the latest trends and gameplay developments.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!--where-->
+            <section id="where">
+                <h2>Where to Explore - the Ever-Evolving Fortnite Island</h2>
+                <br>
+                <div class="container">
+                    <figure>
+                        <img src="images/where.png" alt="Tropical Island"><!--image for where-->
+                        <figcaption>Generated by DALL-E: Tropical island</figcaption>
+                    </figure>
+                    <div class="about-text">
+                        <h3>Mastering the Battle Royale Map</h3>
+                        <p>Each season brings a unique twist on the Fortnite Island. Take time to explore the updated map, learning the new Points of Interest (POIs), hidden landmarks, and strategic locations. Understanding the map layout and resource distribution will help you make informed decisions about landing spots, rotations, and overall gameplay strategy. Utilize online map resources or in-game replays to truly become familiar with the ever-changing battleground.</p>
+
+                        <h3>Beyond the Battle Royale</h3>
+                        <p>Fortnite offers more than just the thrilling Battle Royale mode. Explore other exciting game modes like Creative Mode, where you can unleash your creativity by building your own worlds, game experiences, and adventures. You can also try out Team Rumble for a more relaxed, large-scale team deathmatch experience. By venturing beyond Battle Royale, you can discover new ways to play, have fun with friends, and further enhance your Fortnite experience.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--how-->
+            <section id="how">
+                <h2>How to Become a Battle Royale Master - Tips for Victory Royale Domination!</h2>
+                <br>
+                <div class="container">
+                    <figure>
+                        <img src="images/items.png" alt="in-game items"><!--image for how-->
+                        <figcaption>Generated by DALL-E: Fortnite item visuals</figcaption>
+                    </figure>
+                    <div class="about-text">
+                        <h3>List of Essential Tips:</h3>
+                        <ul>
+                            <li><strong>Master Building:</strong> Building is a core skill in Fortnite. Practice building walls, ramps, and floors to create cover, reach high ground, and even trap opponents.</li>
+                            <li><strong>Utilize the Environment:</strong> Always be aware of your surroundings. Use natural cover like trees and buildings to your advantage, and learn how to edit your builds to create unexpected angles of attack.</li>
+                            <li><strong>Stay Aware of the Storm:</strong> The storm circle constantly shrinks, forcing players closer together. Keep an eye on the timer and map to avoid getting caught outside the safe zone.</li>
+                            <li><strong>Utilize Consumables:</strong> Healing items and shields are essential for surviving encounters. Prioritize picking up these items and using them strategically to maintain your health.</li>
+                            <li><strong>Listen Up!:</strong> Audio cues are crucial in Fortnite. Use headphones to pinpoint enemy footsteps, gunfire, and building sounds, allowing you to react accordingly.</li>
+                        </ul>
+                        <h3>List of Early-Game Domination Strategies:</h3>
+                        <ul>
+                            <li><strong>Hot Drop or Not?:</strong> Decide on your landing strategy. Hot drops offer high risk/high reward, while balanced locations provide a safer start with decent loot.</li>
+                            <li><strong>Eliminate Early Threats:</strong> Don't shy away from early-game fights, especially if you have decent weapons and positioning. Eliminating opponents early reduces competition and grants valuable loot.</li>
+                            <li><strong>Don't Overstay Your Welcome:</strong> If you land in a hot drop location and things get hectic, don't be afraid to disengage and rotate to a less crowded area. Survival is key in the early game.</li>
+                            <li><strong>Be Aware of the Third Party:</strong> Remember, the sound of gunfire attracts other players. Be cautious after eliminating someone; another player might be waiting to eliminate the victor.</li>
+                            <li><strong>Be Mindful of the First Storm Circle:</strong> Plan your initial rotation towards the first safe zone. Don't get caught in the storm while looting or get into unnecessary fights far from the circle.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!--why-->
+            <section id="why">
+                <h2>Why - Because Victory Royales are Glorious!</h2>
+                <br>
+                <div class="container">
+                    <figure>
+                        <img src="images/teamwork.png" alt="teamwork"><!--image for why-->
+                        <figcaption>Generated by DALL-E: Teamwork</figcaption>
+                    </figure>
+                    <div class="about-text">
+                        <h3>Why join The Fortnite community</h3>
+                        <p>Fortnite Battle Royale is more than just a game; it's a thrilling adventure filled with outplays, teamwork, and the rush of victory. The Battle Bus is here to equip you with the knowledge and skills to conquer the Island and experience the joy of a Victory Royale!</p>
+                        <h3>Unleash Your Creativity</h3>
+                        <p>Fortnite is more than just shooting. It fosters creativity through its ever-evolving world, building mechanics, and unique game modes. You can express yourself by designing incredible outfits, constructing elaborate forts, or even creating your own game experiences through Creative Mode. The possibilities are endless, and the community thrives on celebrating player ingenuity.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--AI-->
+            <section id="AI">
+                <h2>AI Prompts</h2>
+                <div style="text-align: center;">
+                <p>I used AI to create the images, descriptio for images, and the titles and text used for this website.</p>
+                <p>The AI model that was used for all text including image descriptions, paragraphs, titles, and subheading was created using Gemini AI</p>
+                <p>The AI model used for images was Canva AI</p>
+                <br>
+                <h3>DALL-E Prompt 1: An action-packed image showcasing the intensity of a Fortnite Battle Royale match, with players building, shooting, and battling it out.</h3>
+                <p>This was used in the landing page</p>
+                <br>
+                <h3>DALL-E Prompt 2: Tim Sweeney</h3>
+                <p>This was used in the "Who Made Fortnite" section</p>
+                <br>
+                <h3>DALL-E Prompt 3: Fortnite Battle Royale items</h3>
+                <p>This was used in the "How to Become a Battle Royale Master" section</p>
+                <br>
+                <h3>DALL-E Prompt 4: Teamwork in gaming simple art</h3>
+                <p>This was used in the "Why" section</p>
+                <br>
+                <h3>Gemini Prompt 1: For the how section can you make a list of tips to make you successful in battle royale</h3>
+                <p>This was used in the "How to Become a Battle Royale Master" section</p>
+                <br>
+                <h3>Gemini Prompt 2: Can you make another type of list for the "how" section aswell</h3>
+                <p>This was used in the "How to Become a Battle Royale Master" section</p>
+                <br>
+                <h3>Gemini Prompt 3: Can you make a "why" section comprise of two subheadings with each having their own paragraph about why others should join the fortnite community.</h3>
+                <p>This was used in the "Why" section</p>
+                <br>
+                <h3>Gemini Prompt 4: Can you make a when section comprised of two subheadings with each having their own paragraph</h3>
+                <p>This was used in the "When to Stay on Top of the Game" section</p>
+                <br>
+                <h3>Gemini Prompt 5: Can you make a "where" section comprised of two subheadings with each having their own paragraph</h3>
+                <p>This was used in the "Where to Explore - the Ever-Evolving Fortnite Island" section</p>
+                <br>
+                <h3>Gemini Prompt 6: Exploring the Fortnite Island</h3>
+                <p>This was used in the "Where to Explore - the Ever-Evolving Fortnite Island" section</p>
+                <br>
+                </div>
+            </section>
+
+        </main><!--end main-->
+
+        <footer>
+            <p style="color: #fefef9;">Built by <a href="leonindustries.ltd/">Leon Industries </a>&copy;2023, <a href="https://www.freecodecamp.org/certification/bavalosortiz/responsive-web-design">Certified in RWD</a></p>
+            <!---replace link with own cetrification link above-->
+            
+            <div class="validation-buttons">
+                <a href="#" id="validation_link_html" style="text-decoration: none;">
+                    <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+                </a>
+                <a href="#" id="validation_link_css" style="text-decoration: none;">
+                    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+                </a>
+                <a href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/kgarci14/itis3135/hobby/" id="validation_link_wcag" target="_blank" style="text-decoration: none;">
+                    <img style="border:0;width:88px;height:31px" src="images/button_validation_wcag.png" alt="WCAG Validity">
+                </a>            
+            </div>
+        </footer>
+
+        <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        document.getElementById("validation_link_disability").setAttribute("href", "https://wave.webaim.org/report#/https://webpages.charlotte.edu/kgarci14/itis3135/hobby/index.html");
+        </script>
+
+        <script>
+            // Add your JavaScript code here (if needed)
+            document.addEventListener('DOMContentLoaded', function() {
+                // Hide all sections except the first one
+                const sections = document.querySelectorAll('main section');
+                sections.forEach((section, index) => {
+                    if (index !== 0) {
+                        section.style.display = 'none';
+                    }
+                });
+
+                // Add click event listeners to navigation links
+                const navLinks = document.querySelectorAll('nav a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function(event) {
+                        event.preventDefault();
+                        const targetId = this.getAttribute('href');
+                        const targetSection = document.querySelector(targetId);
+
+                        // Hide all sections
+                        sections.forEach(section => {
+                            section.style.display = 'none';
+                        });
+
+                        // Show the selected section
+                        targetSection.style.display = 'block';
+                    });
+                });
+            });
+        </script>
+    </body><!--end body tag-->
+</html>
