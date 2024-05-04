@@ -1,27 +1,21 @@
-// Declare empty arrays
 let persons = [];
 let salaries = [];
 
-// Function to add a person and salary to the arrays
 function addSalary() {
     const nameInput = document.getElementById("name").value.trim();
     const salaryInput = document.getElementById("salary").value.trim();
 
-    // Data validation
     if (nameInput === "" || salaryInput === "" || isNaN(parseFloat(salaryInput))) {
         alert("Please enter valid name and numeric salary.");
         return;
     }
 
-    // Add to arrays
     persons.push(nameInput);
     salaries.push(parseFloat(salaryInput));
 
-    // Move cursor to name field
     document.getElementById("name").focus();
 }
 
-// Function to modify the salary of an employee
 function modifySalary() {
     const dropdown = document.getElementById('employeeDropdown');
     const selectedIndex = dropdown.selectedIndex;
@@ -45,16 +39,13 @@ function modifySalary() {
 
     newSalaryInput.value = '';
 
-    // Move cursor to name field
     document.getElementById("name").focus();
 }
 
-// Function to display average and highest salary
 function displayResults() {
     const averageSalary = salaries.reduce((total, salary) => total + salary, 0) / salaries.length;
     const highestSalary = Math.max(...salaries);
 
-    // Display results
     document.getElementById("results").innerHTML = `
         <h2>Results</h2>
         <p>Average Salary: ${averageSalary.toFixed(2)}</p>
@@ -62,7 +53,6 @@ function displayResults() {
     `;
 }
 
-// Function to display names and salaries in a table
 function displaySalary() {
     const table = document.getElementById("results-table");
     table.innerHTML = `
@@ -81,8 +71,7 @@ function displaySalary() {
     }
 }
 
-// Initial setup
 document.addEventListener("DOMContentLoaded", function () {
-    // Move cursor to name field
+
     document.getElementById("name").focus();
 });

@@ -26,8 +26,8 @@ a:hover {
 main {
     text-align: left;
     margin: 0 auto; /* Centers the content horizontally */
-    max-width: 1200px; /* Adjust as needed */
-    width: 90%; /* Adjust percentage based on design requirements */
+    max-width: 100%; /* Adjust as needed */
+    /*width: 90%; /* Adjust percentage based on design requirements */
     padding-bottom: 20px;
 }
 
