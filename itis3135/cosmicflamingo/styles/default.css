@@ -1,0 +1,54 @@
+/* Reset default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centering all text */
+}
+
+/* Basic styles */
+header {
+    background-color: #4a148c;
+    color: #fff;
+    padding: 20px;
+}
+
+.site-name {
+    margin-bottom: 20px; /* Add space between site name and navigation links */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex; /* Display navigation items as flexbox */
+    justify-content: center; /* Center items horizontally */ 
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px; /* Add padding to make the links clickable */
+    border: 2px solid transparent; /* Add border for styling */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background color on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #4a148c;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+

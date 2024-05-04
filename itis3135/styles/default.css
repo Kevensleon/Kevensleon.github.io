@@ -7,28 +7,31 @@ body {
     display: flex;
     flex-direction: column;
 }
-/*https://coolors.co/fff0f5-ffc5d0-f7d6d0-fb6090-821d30*/
+
 a {
-    color: deepblue;
+    color: #1B4965;
     text-decoration: none;
+}
+
+a:visited {
+    color: #1B4965; /* Set the same color as the default link color */
 }
 
 a:hover {
     text-decoration: none;
-    color: white;
+    color: #F3EAF4;
 }
+
 
 main {
     text-align: left;
     margin: 0 auto; /* Centers the content horizontally */
     max-width: 1200px; /* Adjust as needed */
     width: 90%; /* Adjust percentage based on design requirements */
+    padding-bottom: 20px;
 }
 
-h2,
-h3,
-h1,
-figcaption {
+h2, h3, h1, figcaption {
     text-align: center;
 }
 
@@ -54,9 +57,19 @@ nav {
     font-size: 16.5px;
 }
 
-footer {
-    margin-top: auto;
+/* HEADER */
+header{
     text-align: center;
+    padding: 20px;
+    background-color: #64844b;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #64844b;
+    padding-top: 10px;
 }
 
 .intro {
@@ -84,19 +97,16 @@ footer {
 
 /* Table */
 table tr:nth-child(even) {
-    background-color: pink;
+    background-color: #5FA8D3;
     color: black;
 }
 
 table tr:nth-child(odd) {
-    background-color: ghostwhite;
+    background-color: #CAE9FF;
     color: black;
 }
 
-table,
-th,
-td,
-tr {
+table,th,td,tr {
     border: 1.5px solid black;
     border-collapse: collapse;
     text-align: center;
@@ -104,7 +114,7 @@ tr {
 }
 
 .table {
-    margin: 0 auto; /* Centers the content horizontally */
+    margin: 0 auto;
 }
 
 ol {
@@ -113,21 +123,39 @@ ol {
 
 /* Form */
 form {
-    padding: 10px;
+    padding: 10px auto;
+    text-align: center;
 }
 
-.label,
-.input {
+.label, .input {
     margin: 0 auto; /* Centers the content horizontally */
 }
 
 .divider {
-    border: 5px double black;
+    border: 7px double rgb(8, 8, 8);
+    padding: 10px;
 }
 
-.reset,
-.submit {
-    border: 2.5px solid hotpink;
+.reset, .submit {
+    border: 2.5px solid #1B4965;
+}
+
+/* Form styles */
+.form-container {
+    width: 100%; /* Take full width of the container */
+    padding: 20px; /* Add padding */
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 10px; /* Add margin to bottom */
+}
+
+.form-input {
+    width: calc(100% - 20px); /* Adjust width for padding */
+    padding: 8px;
+    margin-bottom: 15px; /* Add margin to bottom */
 }
 
 /* Laptop/small screens */
@@ -162,13 +190,15 @@ form {
     }
 }
 
+/* Calculator */
 .calculator {
     width: 400px; /* Increased width */
     padding: 20px;
-    border: 2px solid #ffc0cb; /* Pink border */
+    margin: 20px auto;
+    border: 2px solid #1B4965; /* Blue border */
     border-radius: 10px;
     text-align: center; /* Centering the content */
-    background-color: #fff0f5; /* Light pink background */
+    background-color: #5FA8D3; /* Light blue background */
 }
 
 .calculator #display {
@@ -177,7 +207,7 @@ form {
     padding: 10px;
     font-size: 24px; /* Increased font size */
     background-color: #fff; /* White display background */
-    border: 2px solid #ffc0cb; /* Pink border for display */
+    border: 2px solid #1B4965; /* Blue border for display */
     border-radius: 5px;
 }
 
@@ -194,12 +224,12 @@ form {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    background-color: #fb6090; /* Pink button background */
+    background-color: #1B4965; /* Blue button background */
     color: #fff; /* White text color */
 }
 
 .calculator button:hover {
-    background-color: #ff8cbb; /* Lighter pink on hover */
+    background-color: #CAE9FF; /* Lighter blue on hover */
 }
 
 
@@ -208,15 +238,14 @@ form {
     width: 100%;
 }
 
-#results_table th, 
-#results_table td {
+#results_table th, #results_table td {
     border: 1px solid #fff0f5;
     padding: 8px;
     text-align: left;
 }
 
 #results_table th {
-    background-color: #fb6090;
+    background-color: #7d2d46;
 }
 
 #results h2 {
@@ -249,4 +278,4 @@ button {
     background-color: #97b282;
     color: black;
     border: 2.5px double #003249;
-  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keven Leon's Kaleidoscopic Lion |✦| ITIS 3135 |✦| BYO Intro</title>
+    <link rel="icon" type="image/webp" href="images/lion-face-icon.webp">
+    <link rel="stylesheet" href="styles/default.css"> 
+    <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+<main>
+    <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+    <div class="form">
+        <form id="survey-form" class="divider">
+
+            <label for="name" class="form">Name:</label>
+            <input type="text" id="name" name="name" class="form-input" required placeholder="Your Name"><br>
+
+            <label for="mascot" class="form-label">Mascot:</label>
+            <input type="text" id="mascot" name="mascot" class="form-input" required placeholder="Your Mascot"><br>
+
+            <label for="image" class="form-label">Image:</label>
+            <input type="file" id="image" name="image" class="form-input" accept="image/png, image/jpeg" required><br>
+
+            <label for="image-caption" class="form-label">Image Caption:</label>
+            <input type="text" id="image-caption" name="image-caption" class="form-input" required placeholder="Image Caption"><br>
+
+            <label for="personal-background" class="form-label">Personal Background:</label>
+            <textarea id="personal-background" name="personal-background" class="form-input" required placeholder="Your Personal Background"></textarea><br>
+
+            <label for="professional-background" class="form-label">Professional Background:</label>
+            <textarea id="professional-background" name="professional-background" class="form-input" required placeholder="Your Professional Background"></textarea><br>
+
+            <label for="academic-background" class="form-label">Academic Background:</label>
+            <textarea id="academic-background" name="academic-background" class="form-input" required placeholder="Your Academic Background"></textarea><br>
+
+            <label for="web-development-background" class="form-label">Background in Web Development:</label>
+            <textarea id="web-development-background" name="web-development-background" class="form-input" required placeholder="Your Background in Web Development"></textarea><br>
+
+            <label for="computer-platform" class="form-label">Primary Computer Platform:</label>
+            <select id="computer-platform" name="computer-platform" class="form-input" required>
+                <option value="Windows">Windows</option>
+                <option value="Mac">Mac</option>
+                <option value="Linux">Linux</option>
+                <option value="Other">Other</option>
+            </select><br>
+
+            <label for="courses" class="form-label">Courses currently taking:</label>
+            <div class="form-input">
+                <div id="course-container">
+                    <input type="text" class="course-input" name="courses" required placeholder="Course 1">
+                    <button type="button" id="add-course-button" onclick="addCourseTextBox()">Add Course</button>
+                </div>
+            </div>
+
+            <label for="funny-thing" class="form-label">Funny thing?</label>
+            <textarea id="funny-thing" name="funny-thing" class="form-input" placeholder="Your Funny Thing"></textarea><br>
+
+            <label for="anything-else" class="form-label">Anything else?</label>
+            <textarea id="anything-else" name="anything-else" class="form-input" placeholder="Anything Else?"></textarea><br>
+
+            <label class="form-label"><input type="checkbox" required> I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label><br>
+
+            <input type="submit" value="Submit" class="button">
+            <input type="reset" value="Reset" class="button">
+        </form>
+    </div>
+    <div id="userIntro" class="userinfo-container"></div>
+</main>
+    <div data-include="components/footer.html"></div>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/survey.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Artist</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <style>
+        .about-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .about-section img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 50%; /* Make the image circular for a portrait effect */
+            margin-right: 20px;
+        }
+
+        .about-section p {
+            max-width: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <div data-include="components/header.html"></div>
+
+    <div class="about-section">
+        <img src="artist_photo.jpg" alt="Artist Photo">
+        <p>
+            Text about the artist
+        </p>
+    </div>
+
+    <div data-include="components/footer.html"></div>
+
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+
+</body>
+</html>
